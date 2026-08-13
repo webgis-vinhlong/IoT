@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Khóa học IoT nông nghiệp và môi trường bằng tiếng Việt: từ điện tử, ESP32, MQTT đến Aquaponics, nhà kính, IAQ, LoRaWAN và smart farm." />
+  <meta name="theme-color" content="#0f766e" />
+  <title>IoT Nông nghiệp & Môi trường — Long Ngo</title>
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Bỏ qua điều hướng</a>
+
+  <header class="hero">
+    <nav class="nav shell" aria-label="Điều hướng chính">
+      <a class="brand" href="#top">🌱 IoT Learning Lab</a>
+      <div class="nav-links">
+        <a href="#lo-trinh">Lộ trình</a>
+        <a href="#kien-truc">Kiến trúc</a>
+        <a href="#course">Bài học</a>
+        <a href="REFERENCES.md">APA</a>
+        <a href="https://github.com/webgis-vinhlong/IoT">GitHub</a>
+      </div>
+    </nav>
+
+    <div id="top" class="hero-grid shell">
+      <section>
+        <p class="eyebrow">TÀI LIỆU MỞ • MIT • TIẾNG VIỆT</p>
+        <h1>IoT cho Nông nghiệp & Môi trường</h1>
+        <p class="lead">Học từ số 0 đến khi tự thiết kế một hệ thống có cảm biến, kết nối, dữ liệu, điều khiển và kiểm thử — từ tưới thông minh, nhà kính/indoor, Aquaponics đến trạm môi trường và LoRaWAN.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#course">Bắt đầu bài 01</a>
+          <a class="button ghost" href="#quickstart">Lab 30 phút</a>
+        </div>
+        <div class="badges" aria-label="Thông tin khóa học">
+          <span>18 bài</span><span>5 chặng</span><span>6 đồ án</span><span>Cơ bản → Nâng cao</span>
+        </div>
+      </section>
+
+      <aside class="progress-card" aria-label="Tiến độ học">
+        <p class="eyebrow">TIẾN ĐỘ CỦA BẠN</p>
+        <div class="progress-number"><strong id="progressPercent">0%</strong><span id="progressText">0 / 18 bài</span></div>
+        <div class="progress-track" aria-hidden="true"><div id="progressBar" class="progress-bar"></div></div>
+        <p class="muted">Tiến độ được lưu cục bộ trên trình duyệt, không gửi lên máy chủ.</p>
+        <button id="resetProgress" class="text-button" type="button">Đặt lại tiến độ</button>
+      </aside>
+    </div>
+  </header>
+
+  <main id="main">
+    <section id="quickstart" class="section shell">
+      <div class="section-heading">
+        <p class="eyebrow">LÀM ĐƯỢC NGAY</p>
+        <h2>Lab 30 phút: từ tín hiệu vật lý đến dữ liệu số</h2>
+        <p>Không cần cloud, không cần tài khoản. Chỉ cần ESP32/Arduino, breadboard, LED và potentiometer hoặc cảm biến analog.</p>
+      </div>
+      <div class="steps-grid">
+        <article class="step"><span>01</span><h3>Lắp</h3><p>Nối LED qua điện trở và một ngõ analog. Kiểm tra GND chung trước khi cấp nguồn.</p></article>
+        <article class="step"><span>02</span><h3>Đo</h3><p>Đọc ADC mỗi 500 ms, in raw value và giá trị đã quy đổi. Quan sát nhiễu, min/max.</p></article>
+        <article class="step"><span>03</span><h3>Quyết định</h3><p>Đặt hai ngưỡng ON/OFF khác nhau để tạo hysteresis, tránh tải bật/tắt liên tục.</p></article>
+        <article class="step"><span>04</span><h3>Kiểm chứng</h3><p>Ghi 20 mẫu, thay đổi đầu vào, kiểm tra hệ phản ứng đúng và có trạng thái an toàn khi cảm biến lỗi.</p></article>
+      </div>
+      <div class="callout warning"><strong>An toàn:</strong> toàn bộ lab nhập môn chỉ dùng USB/5–12 V DC. Không đấu trực tiếp điện lưới.</div>
+    </section>
+
+    <section id="lo-trinh" class="section alt">
+      <div class="shell">
+        <div class="section-heading">
+          <p class="eyebrow">LỘ TRÌNH</p>
+          <h2>Học theo năng lực, không học theo danh sách linh kiện</h2>
+        </div>
+        <div class="roadmap">
+          <article><b>A</b><h3>Nền tảng</h3><p>Điện tử, MCU, sensor, ADC, hiệu chuẩn.</p><small>Bài 01–04</small></article>
+          <article><b>B</b><h3>Kết nối & dữ liệu</h3><p>HTTP, MQTT, data model, điều khiển.</p><small>Bài 05–08</small></article>
+          <article><b>C</b><h3>Ứng dụng</h3><p>Tưới, indoor, Aquaponics, IAQ, mưa.</p><small>Bài 09–13</small></article>
+          <article><b>D</b><h3>Hiện trường</h3><p>LoRaWAN, năng lượng, reliability, security.</p><small>Bài 14–16</small></article>
+          <article><b>E</b><h3>Đồ án</h3><p>Tích hợp, deployment, nghiệm thu.</p><small>Bài 17–18</small></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="kien-truc" class="section shell">
+      <div class="section-heading">
+        <p class="eyebrow">BẢN CHẤT HỆ THỐNG</p>
+        <h2>IoT không phải “một board có Wi‑Fi”</h2>
+        <p>Một hệ IoT tốt là chuỗi đo lường–truyền thông–ra quyết định có thể kiểm chứng và có trạng thái an toàn khi lỗi.</p>
+      </div>
+      <div class="architecture">
+        <div class="arch-node"><b>1. Physical</b><span>đất • nước • không khí • ánh sáng</span></div>
+        <div class="arch-arrow">→</div>
+        <div class="arch-node"><b>2. Sense</b><span>sensor • ADC • calibration</span></div>
+        <div class="arch-arrow">→</div>
+        <div class="arch-node"><b>3. Edge</b><span>ESP32 • logic • buffer</span></div>
+        <div class="arch-arrow">→</div>
+        <div class="arch-node"><b>4. Network</b><span>Wi‑Fi • MQTT • LoRaWAN</span></div>
+        <div class="arch-arrow">→</div>
+        <div class="arch-node"><b>5. App</b><span>broker • DB • dashboard • alert</span></div>
+        <div class="arch-arrow">↺</div>
+        <div class="arch-node"><b>6. Actuate</b><span>pump • valve • fan • light</span></div>
+      </div>
+      <div class="principles-grid">
+        <article><h3>Đo trước, tự động sau</h3><p>Đầu tiên phải biết sensor đo gì, đơn vị gì, sai số và điều kiện hỏng. Tự động hóa trên dữ liệu chưa kiểm chứng chỉ làm lỗi nhanh hơn.</p></article>
+        <article><h3>Edge vẫn phải sống khi mất mạng</h3><p>Quy tắc an toàn cục bộ, timeout, watchdog và fallback quan trọng hơn dashboard đẹp.</p></article>
+        <article><h3>Ngưỡng phải có ngữ cảnh</h3><p>Không có một ngưỡng độ ẩm/pH/nhiệt độ đúng cho mọi cây, cá, giá thể hay cảm biến.</p></article>
+        <article><h3>Security là kiến trúc</h3><p>Định danh thiết bị, cấu hình, bảo vệ dữ liệu, kiểm soát interface, cập nhật và quan sát trạng thái phải được thiết kế từ đầu.</p></article>
+      </div>
+    </section>
+
+    <section id="course" class="section alt">
+      <div class="shell">
+        <div class="section-heading course-heading">
+          <div>
+            <p class="eyebrow">18 BÀI HỌC</p>
+            <h2>Khóa học tương tác</h2>
+            <p>Mở từng bài, làm lab, trả lời checkpoint và đánh dấu hoàn thành.</p>
+          </div>
+          <div class="filters" role="group" aria-label="Lọc bài học">
+            <button class="filter active" data-filter="all" type="button">Tất cả</button>
+            <button class="filter" data-filter="Cơ bản" type="button">Cơ bản</button>
+            <button class="filter" data-filter="Trung cấp" type="button">Trung cấp</button>
+            <button class="filter" data-filter="Nâng cao" type="button">Nâng cao</button>
+          </div>
+        </div>
+        <div id="courseGrid" class="course-grid"></div>
+      </div>
+    </section>
+
+    <section class="section shell">
+      <div class="section-heading">
+        <p class="eyebrow">BỘ KIT THEO MỨC</p>
+        <h2>Mua ít, học sâu</h2>
+      </div>
+      <div class="kit-grid">
+        <article><h3>Starter</h3><p class="price">≈ 1 MCU + 5 cảm biến cơ bản</p><ul><li>ESP32 DevKit hoặc Arduino UNO</li><li>BME280/DHT22</li><li>potentiometer/LDR</li><li>độ ẩm đất điện dung</li><li>float switch + bơm DC nhỏ</li></ul></article>
+        <article><h3>Environment</h3><p class="price">Mở rộng sau bài 09</p><ul><li>DS18B20 chống nước</li><li>PM2.5 hoặc CO₂ sensor</li><li>tipping-bucket rain gauge</li><li>flow sensor</li><li>nguồn DC riêng cho tải</li></ul></article>
+        <article><h3>Field / LoRaWAN</h3><p class="price">Chỉ mua khi học bài 14</p><ul><li>LoRaWAN end-device</li><li>gateway phù hợp region</li><li>anten đúng băng tần</li><li>pin/solar + charger</li><li>hộp IP-rated phù hợp</li></ul></article>
+      </div>
+    </section>
+
+    <section class="section citation-section">
+      <div class="shell citation-grid">
+        <div>
+          <p class="eyebrow">NGUỒN XÁC THỰC</p>
+          <h2>APA, tiêu chuẩn và provenance rõ ràng</h2>
+          <p>Nội dung cập nhật dựa trên tài liệu chính thức của NIST, OASIS, LoRa Alliance, FAO, EPA, Arduino và Espressif; đồng thời dùng các giáo trình/đồ án tiếng Việt đã cung cấp làm case study.</p>
+          <a class="button ghost light" href="REFERENCES.md">Xem danh mục APA</a>
+        </div>
+        <div class="source-tags"><span>NIST IR 8259 R1</span><span>MQTT 5.0 / OASIS</span><span>LoRaWAN 1.1</span><span>RP002-1.0.5</span><span>FAO Aquaponics</span><span>FAO Greenhouse</span><span>US EPA IAQ</span><span>Arduino</span><span>Espressif</span></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="shell footer-grid">
+      <div><strong>IoT Nông nghiệp & Môi trường</strong><p>MIT © 2026 Long Ngo.</p></div>
+      <div><a href="README.md">README</a><a href="LICENSE">MIT License</a><a href="REFERENCES.md">APA References</a></div>
+    </div>
+  </footer>
+
+  <dialog id="lessonDialog" class="lesson-dialog">
+    <form method="dialog"><button class="dialog-close" aria-label="Đóng bài học">×</button></form>
+    <div id="lessonContent"></div>
+  </dialog>
+
+  <script src="assets/course.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>
