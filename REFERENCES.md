@@ -32,13 +32,13 @@ U.S. Environmental Protection Agency. (2025). *Low-cost air pollution monitors a
 
 ## B. Tài liệu học tập tiếng Việt do người dùng cung cấp
 
-Huy, P. Đ. (2015). *Nghiên cứu và xây dựng một số hệ đo mưa ứng dụng vào hệ thống cảnh báo trượt đất* [Luận văn thạc sĩ, Trường Đại học Công nghệ, Đại học Quốc gia Hà Nội].
+Lưu, T. H. (2019). *Ứng dụng công nghệ truyền thông LoRa trong hệ thống tự động hóa nông nghiệp* [Đồ án tốt nghiệp, Trường Đại học Bách khoa Hà Nội].
 
-Hiếu, L. T. (2019). *Ứng dụng công nghệ truyền thông LoRa trong hệ thống tự động hóa nông nghiệp* [Đồ án tốt nghiệp, Trường Đại học Bách khoa Hà Nội].
+Nguyễn, T. T. (2014). *Hướng dẫn sử dụng cơ bản Arduino*. Học viện Hàng không Việt Nam, Khoa Điện tử Viễn thông.
+
+Phạm, Đ. H. (2015). *Nghiên cứu và xây dựng một số hệ đo mưa ứng dụng vào hệ thống cảnh báo trượt đất* [Luận văn thạc sĩ, Trường Đại học Công nghệ, Đại học Quốc gia Hà Nội].
 
 IoT Maker Việt Nam. (n.d.). *Internet of Things (IoT) cho người mới bắt đầu*.
-
-Tín, N. T. (2014). *Hướng dẫn sử dụng cơ bản Arduino*. Học viện Hàng không Việt Nam, Khoa Điện tử Viễn thông.
 
 Trần, T. C. (2007). *Cấu kiện điện tử*. Học viện Công nghệ Bưu chính Viễn thông.
 
